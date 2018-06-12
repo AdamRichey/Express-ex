@@ -1,0 +1,13 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+<html>
+<body>
+    <% for (var x in users) { %>
+        <img src="/images/<%= users[x].Name %>.jpg" alt="tiger">
+        <h2>This is the <%= users[x].Name %></h2><!-- %= prints the code to our view -->
+        <h4>Speed: <%= users[x].Speed %></h4>
+        <h4>Diet: <%= users[x].Diet %></h4>
+        <h4>Length: <%= users[x].Length %></h4>
+        <hr>
+    <% } %>
+</body>
+</html>
